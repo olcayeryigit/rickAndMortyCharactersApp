@@ -24,8 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${figtree.className} antialiased `}>
-      <div className="bg-cover bg-center bg-[url('/image/bg5.webp')] bg-no-repeat p-4">
-      <main className="container mx-auto  flex-grow  ">{children}</main>
+      <div className="relative bg-cover bg-center bg-[url('/image/bg5.webp')] bg-no-repeat p-4">
+
+      <main className="container mx-auto  flex-grow z-50 ">{children}</main>
 </div>
       </body>
     </html>

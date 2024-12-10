@@ -29,7 +29,7 @@ const Filters: React.FC<FilterProps> = ({ onFilterChange }) => {
           id="status"
           value={status}
           onChange={handleStatusChange}
-          className="border-2 border-white p-4 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="border-2 border-white p-4 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-gray-200"
         >
           <option value="">All</option>
           <option value="alive">Alive</option>
@@ -43,7 +43,7 @@ const Filters: React.FC<FilterProps> = ({ onFilterChange }) => {
           id="gender"
           value={gender}
           onChange={handleGenderChange}
-          className="border-2 border-white p-4 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="border-2 border-white p-4 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-gray-200"
         >
           <option value="">All</option>
           <option value="male">Male</option>

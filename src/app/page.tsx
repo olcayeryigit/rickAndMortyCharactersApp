@@ -55,13 +55,13 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen ">
            
 
       <div className="relative w-full h-28">
         <Image fill className="object-contain" src="/image/img1.png" alt="header-image"/>
       </div>
-      <h1 className="text-6xl font-bold text-black text-center tracking-wide mb-8">
+      <h1 className="text-6xl font-bold text-black text-center tracking-wide mb-8 mt-2">
         Rick and Morty Characters
       </h1>
       <Filters onFilterChange={handleFilterChange} />
