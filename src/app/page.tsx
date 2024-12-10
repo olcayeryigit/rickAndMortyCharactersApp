@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Filters from "@/components/Filter";
 import CharacterList from "@/components/CharacterList";
 import { BASE_URL } from "@/lib/api";
+import Image from "next/image";
 
 async function getCharacters(status: string | null, gender: string | null, page: number) {
   const params = new URLSearchParams();
@@ -55,6 +56,9 @@ export default function Home() {
 
   return (
     <main className="p-8 bg-gradient-to-br from-indigo-900 to-purple-700 min-h-screen">
+      <div className="relative w-full h-28">
+        <Image fill className="object-contain" src="/image/img1.png"/>
+      </div>
       <h1 className="text-6xl font-bold text-white text-center tracking-wide mb-8">
         Rick and Morty Characters
       </h1>
@@ -64,7 +68,7 @@ export default function Home() {
         <button
           onClick={goToPrevPage}
           disabled={pagination.currentPage === 1}
-          className="p-4 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-purple-800 disabled:bg-gray-700 transition-all transform hover:scale-110 shadow-xl w-28"
+          className="p-4 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-purple-800 disabled:bg-gray-700 transition-all transform  shadow-xl w-28"
         >
         Previous
         </button>
@@ -72,7 +76,7 @@ export default function Home() {
         <button
           onClick={goToNextPage}
           disabled={pagination.currentPage === pagination.totalPages}
-          className="p-4 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-purple-800 disabled:bg-gray-700 transition-all transform hover:scale-110 shadow-xl w-28"
+          className="p-4 bg-transparent border-2 border-white rounded-full hover:bg-white hover:text-purple-800 disabled:bg-gray-700 transition-all transform  shadow-xl w-28"
         >
           Next 
         </button>

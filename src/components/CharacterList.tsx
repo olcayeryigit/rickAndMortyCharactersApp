@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Character {
   id: number;
@@ -22,10 +23,12 @@ const CharacterList: React.FC<CharacterListProps> = ({ characters }) => {
           className="border-2 border-gray-300 p-4 rounded-lg bg-white shadow-lg hover:shadow-xl transition-all flex flex-col"
         >
           <div className="relative h-48 mb-4 overflow-hidden rounded-lg">
-            <img
+            <Image
               src={character.image}
               alt={character.name}
               className="w-full h-full object-cover"
+           fill
+             
             />
           </div>
           <div className="flex-grow">
