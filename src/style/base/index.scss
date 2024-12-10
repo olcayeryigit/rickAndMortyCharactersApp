@@ -1,0 +1,13 @@
+// @use direktiflerini en üstte kullanıyoruz
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc;
+  color: #333;
+}
