@@ -20,7 +20,7 @@ const CharacterList: React.FC<CharacterListProps> = ({ characters }) => {
       {characters.map((character) => (
         <div
           key={character.id}
-          className="border-2 border-gray-300 p-4 rounded-lg bg-white shadow-lg hover:shadow-xl transition-all flex flex-col"
+          className="border-2 border-gray-800 p-4 rounded-lg bg-[#008B8B] shadow-lg hover:shadow-xl transition-all flex flex-col bg-opacity-70"
         >
           <div className="relative h-48 mb-4 overflow-hidden rounded-lg">
             <Image

@@ -55,11 +55,13 @@ export default function Home() {
   };
 
   return (
-    <main className="p-8 bg-gradient-to-br from-indigo-900 to-purple-700 min-h-screen">
+    <main className="p-8 bg-white bg-opacity-70  min-h-screen">
+           
+
       <div className="relative w-full h-28">
-        <Image fill className="object-contain" src="/image/img1.png"/>
+        <Image fill className="object-contain" src="/image/img1.png" alt="header-image"/>
       </div>
-      <h1 className="text-6xl font-bold text-white text-center tracking-wide mb-8">
+      <h1 className="text-6xl font-bold text-black text-center tracking-wide mb-8">
         Rick and Morty Characters
       </h1>
       <Filters onFilterChange={handleFilterChange} />
