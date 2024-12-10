@@ -55,7 +55,7 @@ export default function Home() {
   };
 
   return (
-    <main className="p-8 bg-white bg-opacity-70  min-h-screen">
+    <main className="min-h-screen">
            
 
       <div className="relative w-full h-28">
